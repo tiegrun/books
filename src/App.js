@@ -25,12 +25,12 @@ function  BooksApp (){
 
   const updateBooksShelf = (updatedBook, newShelf) =>{
 
-    BooksAPI.update(updatedBook, newShelf);
-
-    BooksAPI.getAll()
+    BooksAPI.update(updatedBook, newShelf)
+    .then(BooksAPI.getAll()
     .then((books) =>{
       setAllBooks(books)
-    })
+    }))
+    
 
     setUpdatePage(true)
   }
