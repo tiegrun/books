@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react'
-// import BooksList from './BooksList'
 import DisplayAllBooks from './DisplayAllBooks'
 import Searching from './Searching'
 import * as BooksAPI from './BooksAPI'
@@ -11,7 +10,7 @@ function  BooksApp (){
   const [allbooks, setAllBooks] = useState([])
 
   const [updatePage, setUpdatePage] = useState(false)
-  
+
   useEffect(()=>{
     BooksAPI.getAll()
     .then((books) =>{
@@ -31,14 +30,14 @@ function  BooksApp (){
       setAllBooks(books)
     }))
     
-
     setUpdatePage(true)
   }
 
   return (
     <div className="app">
       <Routes>
-        <Route exact path="/search" element={<Searching allbooks = {allbooks} updateBooksShelf = {updateBooksShelf}/>} />
+        {/* <Route exact path="/search" element={<Searching allbooks = {allbooks} updateBooksShelf = {updateBooksShelf} />} /> */}
+        <Route exact path="/search" element={<Searching updateBooksShelf = {updateBooksShelf} booksInShelf={allbooks}/>} />
         <Route exact path="/" element={<DisplayAllBooks allbooks = {allbooks} updateBooksShelf = {updateBooksShelf}/>}  />
       </Routes>
     </div>

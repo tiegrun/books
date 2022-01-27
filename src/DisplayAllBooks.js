@@ -21,5 +21,4 @@ function DisplayAllBooks ({ allbooks, updateBooksShelf }){
   )
 }
 
-
 export default DisplayAllBooks;

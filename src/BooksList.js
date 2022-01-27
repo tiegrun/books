@@ -10,8 +10,6 @@ function BooksList ( {allbooks, updateBooksShelf}){
 
   }
 
-
-  
   const bookShelfNames = [
     {
       currentlyReading : "Currently Reading"
@@ -22,16 +20,11 @@ function BooksList ( {allbooks, updateBooksShelf}){
     {
       read: "Read"
     },
-    // {
-    //   none: "None"
-    // }
   ]
   
   return (
     <div className="list-books-content">
-      <div>
         <CreateBookShelf chosenBook={chosenBook} allbooks={allbooks} bookShelfNames={bookShelfNames}/>
-      </div>
     </div>
   )
 }
