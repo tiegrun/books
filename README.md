@@ -1,3 +1,14 @@
+<h1>MyReads</h1>
+
+MyReads is a simple app that allows to place books in one of three shelves.
+
+- Currently Reading
+- Want to Read
+- Read
+
+It also allows searching books based on title and author.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
