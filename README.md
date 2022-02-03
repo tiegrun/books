@@ -11,11 +11,19 @@ It also allows searching books based on title and author.
 
 # Getting Started with Create React App
 
-- npx create-react-app my-app
+### `npx create-react-app books`
 
-## Available Scripts
 
-In the project directory, you can run:
+# Use NPM to install the dependencies
+
+### `npm install`
+
+
+# API
+
+- BooksAPI's
+
+#
 
 ### `npm start`
 
