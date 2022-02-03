@@ -11,7 +11,7 @@ It also allows searching books based on title and author.
 
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- npx create-react-app my-app
 
 ## Available Scripts
 
